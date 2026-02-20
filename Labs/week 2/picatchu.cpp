@@ -2,8 +2,8 @@
 
 using namespace std;
 
-int main() {
-    // Printing Pikachu ASCII art
+ main() {
+   
     cout << "      \\'-_          /--/" << endl;
     cout << "       \\  '-!__..__/  / " << endl;
     cout << "        !            /  " << endl;

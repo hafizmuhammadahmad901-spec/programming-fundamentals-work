@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int main() {
+ main() {
 	system("color 78");
 	cout<<"   #### "<<endl;
 	cout<<" ##   ##" <<endl;
