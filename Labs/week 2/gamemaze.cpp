@@ -2,6 +2,7 @@
 
 using namespace std;
  main() {
+	 system("color 20");
     
 
     
