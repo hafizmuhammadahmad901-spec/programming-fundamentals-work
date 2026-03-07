@@ -15,13 +15,13 @@ int main() {
 
 
     }
-    else if(ch=='-') {
+     if(ch=='-') {
         cout<<"addition is =  "<<num1+num2;
     }
-    else if(ch=='*') {
+    if(ch=='*') {
         cout<<"division is =  "<<num1/num2;
     }
-    else if(ch=='/') {
+    if(ch=='/') {
         cout<<"multiplication is =  "<<num1*num2;
     }
     else{

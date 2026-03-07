@@ -1,29 +1,48 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+
 int main() {
     char ch;
-    cout<<"ENTER THE CHARACTER :";
-    cin>>ch;
-    
-     if(ch>='0' && ch<='9') {
-        cout<<"the character is a digit";
-
-    }
-    else if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U') {
-        cout<<"the character is a vowel";
-    }
-    else if(ch=='b' || ch=='c' || ch=='d' || ch=='f' || ch=='g' || ch=='h' || ch=='j' || ch=='k' || ch=='l' || ch=='m' || ch=='n' || ch=='p' || ch=='q' || ch=='r' || ch=='s' || ch=='t' || ch=='v' || ch=='w' || ch=='x' || ch=='y' || ch=='z' || ch=='B' || ch=='C' || ch=='D' || ch=='F' || ch=='G' || ch=='H' || ch=='J' || ch=='K' || ch=='L' || ch=='M' || ch=='N' || ch=='P' || ch=='Q' || ch=='R' || ch=='S' || ch=='T' || ch=='V' || ch=='W' || ch=='X' || ch=='Y'||ch =='Z') {
-        cout<<"the character is a consonant";
-
-
-    }
-    else{
-        cout<<"the character is a special character";
-    
+    cout << "ENTER THE CHARACTER: ";
+    cin >> ch;
 
     
+    if (ch >= '0') {
+        if (ch <= '9') {
+            cout << "The character is a digit" << endl;
+            
+        }
     }
-    
+
    
-}
+    if (ch == 'a') { cout << "The character is a vowel" << endl; return 0; }
+    if (ch == 'e') { cout << "The character is a vowel" << endl; return 0; }
+    if (ch == 'i') { cout << "The character is a vowel" << endl; return 0; }
+    if (ch == 'o') { cout << "The character is a vowel" << endl; return 0; }
+    if (ch == 'u') { cout << "The character is a vowel" << endl; return 0; }
+    if (ch == 'A') { cout << "The character is a vowel" << endl; return 0; }
+    if (ch == 'E') { cout << "The character is a vowel" << endl; return 0; }
+    if (ch == 'I') { cout << "The character is a vowel" << endl; return 0; }
+    if (ch == 'O') { cout << "The character is a vowel" << endl; return 0; }
+    if (ch == 'U') { cout << "The character is a vowel" << endl; return 0; }
 
+    
+    if (ch >= 'a') {
+        if (ch <= 'z') {
+            cout << "The character is a consonant" << endl;
+            
+        }
+    }
+    
+    if (ch >= 'A') {
+        if (ch <= 'Z') {
+            cout << "The character is a consonant" << endl;
+           
+        }
+    }
+
+    
+    cout << "The character is a special character" << endl;
+
+  
+}
