@@ -9,7 +9,7 @@ int main() {
     int amount;
     bool login = false;
 
-    // PIN attempts
+    
     for(int i = 0; i < 3; i++){
         cout << "ENTER ATM PIN: ";
         cin >> pin;

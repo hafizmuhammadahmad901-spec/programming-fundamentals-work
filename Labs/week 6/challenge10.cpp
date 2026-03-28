@@ -6,7 +6,7 @@ int main()
     char str[100];
 
     cout << "Enter a string: ";
-    cin>>str[100];
+   cin.getline(str, 100); 
 
     cout << "something " << str;
 
