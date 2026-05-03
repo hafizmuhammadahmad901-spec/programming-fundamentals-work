@@ -331,7 +331,7 @@ void changeBusStatus()
     sleep(2);
 }
 
-// NEW Admin: View Booking Report with revenue
+
 void viewBookingReport()
 {
     system("clear"); header();
@@ -366,7 +366,7 @@ void viewBookingReport()
     cin.get();
 }
 
-// NEW Admin: Reset a passenger's account and bookings
+
 void resetPassengerAccount()
 {
     system("clear"); header();
@@ -409,7 +409,7 @@ void resetPassengerAccount()
     sleep(2);
 }
 
-// NEW Admin: Set fare for a specific bus
+
 void setBusFare()
 {
     system("clear"); header();
@@ -507,12 +507,12 @@ void viewSeats()
             return;
         }
     }
-    // BUG-FIX: was completely silent on bus not found
+    
     cout << "Bus not found!\n";
     sleep(2);
 }
 
-// NEW Manager: Booking summary totals
+
 void viewBookingSummary()
 {
     system("clear"); header();
@@ -543,7 +543,7 @@ void viewBookingSummary()
     cin.get();
 }
 
-// NEW Manager: Nicely formatted complete bus list
+
 void viewBusListFormatted()
 {
     system("clear"); header();
@@ -574,7 +574,7 @@ void viewBusListFormatted()
     cin.get();
 }
 
-// NEW Manager: View registered passenger count
+
 void viewPassengerCount()
 {
     system("clear"); header();
@@ -625,7 +625,7 @@ void managerMenu()
 
 // ── Passenger ─────────────────────────────────────────────────────────────────
 
-// BUG-FIX: only show Active buses; original showed all buses regardless of status
+
 void viewAvailableBuses()
 {
     bool found = false;
@@ -657,7 +657,7 @@ void bookSeat()
     {
         if(busNo[i] == search)
         {
-            // BUG-FIX: reject booking on Inactive buses
+           
             if(busStatus[i] != "Active")
             {
                 cout << "This bus is not active and cannot be booked!\n";
@@ -674,7 +674,7 @@ void bookSeat()
                 }
                 cout << "Seat booked successfully!\n";
                 cout << "Fare: Rs" << busFare[i] << " per seat\n";
-                sleep(2);   // BUG-FIX: missing in original
+                sleep(2);  
             }
             else
             {
@@ -685,7 +685,7 @@ void bookSeat()
             return;
         }
     }
-    // BUG-FIX: no feedback when bus not found
+    
     cout << "Bus not found!\n";
     sleep(2);
 }
@@ -710,14 +710,14 @@ void cancelBooking()
             }
             else
             {
-                // BUG-FIX: original was silent here
+                
                 cout << "No bookings found for this bus!\n";
                 sleep(2);
             }
             return;
         }
     }
-    // BUG-FIX: original was silent when bus not found
+    
     cout << "Bus not found!\n";
     sleep(2);
 }
@@ -742,7 +742,7 @@ void viewBookings()
     cin.get();
 }
 
-// NEW Passenger: View my own profile and booking info
+
 void viewMyProfile()
 {
     system("clear"); header();
@@ -773,7 +773,7 @@ void viewMyProfile()
     cin.get();
 }
 
-// NEW Passenger: Change password
+
 void changePassword()
 {
     system("clear"); header();
@@ -820,7 +820,7 @@ void changePassword()
     sleep(2);
 }
 
-// NEW Passenger: Filter available buses by type
+
 void viewSeatsByType()
 {
     system("clear"); header();
@@ -883,9 +883,7 @@ void passengerMenu()
     }
 }
 
-// ── Auth ─────────────────────────────────────────────────────────────────────
 
-// BUG-FIX: now validates against adminEmail_const, not just any valid email format
 void adminEmailid()
 {
     string email;
@@ -912,7 +910,7 @@ void adminEmailid()
     }
 }
 
-// BUG-FIX: now validates against adminPassword_const, not just any digit+special pattern
+
 void adminPassword()
 {
     string pass;
